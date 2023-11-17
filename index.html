@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karol Macas | Portafolio</title>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+     <!-- navegacion -->
+    <div class="navbar-fixed">
+        <nav class="purple">
+            <div class="nav-wrapper container">
+                <a href="#!" class="brand-logo right">Karol Macas</a>
+                <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class=" left hide-on-med-and-down ">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="html/Sobre_Mi.html">Sobre Mí</a></li>
+                    <li><a href="html/habilidades.html">Habilidades</a></li>
+                    <li><a href="html/proyectos.html">Proyectos</a></li>
+                    <li><a href="html/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="menu-responsive">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="html/Sobre_Mi.html">Sobre Mí</a></li>
+        <li><a href="html/habilidades.html">Habilidades</a></li>
+        <li><a href="html/proyectos.html">Proyectos</a></li>
+        <li><a href="html/contacto.html">Contacto</a></li>
+        
+    </ul>
+
+
+   <!-- Contenido -->
+
+    <div id="inicio" class="container">
+
+         <!-- Inicio -->
+        <h2 class="teal-text">Inicio</h2>
+        <div class="col s12 m6">
+            <div class="card horizontal" onmouseover="cambiarColor(this)" onmouseout="restaurarColor(this)">
+                 <div class="card-image"class="responsive-img" alt="Foto">
+                         <img class="responsive-img" src="images/foto.jpg">
+                 </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <h4>¡Hola!</h4>
+                        
+                        <p>¡Bienvenido  a mi Portafolio digital! </p>
+                        <p>Soy Karol, Estudiante de Ingenieria en Software de la Universidad de las Fuerzas Armadas.</p>
+                        <p>Este portafolio contiene la colección de proyectos realizados, habilidades obtenidas en el transcurso de mi carrera y además te menciono mis Estudios, Objetivos.</p>
+                        <p>Navega y si tiene una pregunta no dudes en contactarme.</p>
+                        <h5>¡Gracias por visitar y espero que vuelva pronto!</h5>
+                             
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+
+
+
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+       
+    <script>
+        function cambiarColor(element) {
+            element.style.backgroundColor = '#e0f7fa ';
+            element.style.color = '#880e4f';
+        }
+
+        function restaurarColor(element) {
+            element.style.backgroundColor = '';
+            element.style.color = '';
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            M.AutoInit();
+        });
+    </script>
+</body>
+
+<footer>
+    <p>&copy; 2023 Karol Macas. Todos los derechos reservados.</p>
+</footer>
+</html>
+
+
+   
